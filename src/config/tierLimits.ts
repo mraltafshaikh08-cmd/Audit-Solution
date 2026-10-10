@@ -1,0 +1,29 @@
+export interface TierConfig {
+  MAX_DAILY_SEARCHES: number;
+  MAX_MONTHLY_CRAWL_PAGES: number;
+  ALLOW_PDF_DOWNLOAD: boolean;
+  PDF_WATERMARK_ENABLED: boolean;
+  FEATURES: {
+    BASIC_SITE_HEALTH_SCORE: boolean;
+    KEYWORD_TRACKING_LIMIT: number;
+    BASIC_BACKLINK_OVERVIEW: boolean;
+    WHITE_LABELING: boolean;
+    EMBEDDABLE_WIDGET: boolean;
+  };
+}
+
+export const TIER_CONFIG: { FREE_TIER: TierConfig } = {
+  FREE_TIER: {
+    MAX_DAILY_SEARCHES: 15,
+    MAX_MONTHLY_CRAWL_PAGES: 150,
+    ALLOW_PDF_DOWNLOAD: true,
+    PDF_WATERMARK_ENABLED: true,
+    FEATURES: {
+      BASIC_SITE_HEALTH_SCORE: true,
+      KEYWORD_TRACKING_LIMIT: 10,
+      BASIC_BACKLINK_OVERVIEW: true,
+      WHITE_LABELING: false,
+      EMBEDDABLE_WIDGET: false
+    }
+  }
+};

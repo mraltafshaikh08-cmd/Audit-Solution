@@ -1,0 +1,8 @@
+{
+  "name": "AuditSolution - All-in-One Website Audit & SEO Audit System",
+  "description": "All-in-One Website Audit & SEO Audit System, Enterprise-grade website audit SaaS platform featuring 14+ technical, web dev, SEO, performance, UX, accessibility, and security audits with white-label reports provider.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
