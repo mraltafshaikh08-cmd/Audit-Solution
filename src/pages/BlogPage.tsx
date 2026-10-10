@@ -17,6 +17,7 @@ import {
   ShoppingBag,
   Share2
 } from 'lucide-react';
+import { AdSenseBanner } from '../components/AdSenseBanner';
 
 interface BlogPageProps {
   onNavigateToHome: () => void;
@@ -435,6 +436,11 @@ export const BlogPage: React.FC<BlogPageProps> = ({ onNavigateToHome }) => {
                   </span>
                 </form>
               )}
+            </div>
+
+            {/* Widget 4: Google AdSense Sidebar Slot */}
+            <div className="pt-2">
+              <AdSenseBanner isPro={false} slot="sidebar" />
             </div>
 
           </div>
